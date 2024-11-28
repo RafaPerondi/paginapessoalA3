@@ -1,0 +1,111 @@
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1ee0fa;
+    color: rgb(252, 252, 252);
+    padding: 20px 10px;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h1, h2 {
+    color: #000000;
+}
+
+ul {
+    list-style-type: square;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+a {
+    color: #4682b4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+/* Estilo para o botão "Me Veja" */
+#me-veja {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4682b4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#me-veja:hover {
+    background-color: #5a9bd6;
+}
+
+/* Estilo para o contêiner da imagem */
+#imagem-container {
+    display: none; /* Começa oculto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#imagem-container img {
+    max-width: 90%;
+    max-height: 80vh;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+/* Botão de fechar "X" */
+#fechar-imagem {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    z-index: 1001; /* Garante que fique acima da imagem */
+}
+
+#fechar-imagem:hover {
+    background-color: darkred;
+}
